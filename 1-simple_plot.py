@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # numpy's linspace function returns an evenly spaced array
 # of numbers over a specified interval.
-# ex) x = np.linspace(10,20, num=10)
+# ex) x = np.linspace(10,20, num=5)
 #     Returns 5 numbers between 10 and 20:
 #     >>> x
 #     array([10. , 12.5, 15. , 17.5, 20. ])

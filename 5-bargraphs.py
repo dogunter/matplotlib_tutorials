@@ -43,8 +43,12 @@ x_pos = np.arange(len(categories))
 # The second paramter to bar() is the height of the bar to plot. This is our
 # 'averages'.
 ax.bar(x_pos, averages, align='center', alpha=0.5)
-# Place the tickmarks on the x-axis centered under each bar
-plt.xticks(x_pos, categories)
+
+# Instead of xlabels as in previous plots, we have multiple labels, one for each bar.
+# Set the tickmarks to be centered, under each bar
+ax.set_xticks(x_pos)
+# And now display the labels at each tickmark
+ax.set_xticklabels(categories)
 
 # Finally, add our title and labels
 # The x-axis labels are automatically the names of the first argument passed
